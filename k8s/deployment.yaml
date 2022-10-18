@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: musicbox
+  labels:
+    app: musicbox
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: musicbox
+  template:
+    metadata:
+      labels:
+        app: musicbox
+    spec:
+      containers:
+      - name: musicbox
+        image: denhamparry/app-9172e898aef006d7952c374cd9e7bbae:latest
+        ports:
+        - containerPort: 4000
