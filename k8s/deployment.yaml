@@ -4,6 +4,7 @@ metadata:
   name: musicbox
   labels:
     app: musicbox
+  namespace: brabbit
 spec:
   replicas: 1
   selector:

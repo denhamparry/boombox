@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: napster
+  namespace: brabbit
 spec:
   selector:
     app: musicbox
